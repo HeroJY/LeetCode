@@ -52,7 +52,7 @@ public class ReverseInteger {
 
         int result;
 
-        result = ri.reverse(-1534236469);
+        result = ri.reverse(534236469);
 
         System.out.println(result);
     }
