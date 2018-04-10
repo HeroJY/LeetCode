@@ -27,6 +27,11 @@ import interview.Lcs;
  *         规则为：失配字符所在位置减去失配字符对应的next值。
  */
 public class ImplementstrStr {
+    /**
+     * 求next数组
+     * @param s
+     * @param next
+     */
     public static void getNext(String s, int[] next) {
         int len = s.length();
         char[] str = s.toCharArray();
