@@ -1,4 +1,4 @@
-package main.java.AddTwoNumbersII;
+package main.java.addtwonumbersII;
 
 import java.util.Stack;
 
@@ -25,9 +25,9 @@ public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         //采用转换int相加会出现越界情况 2018-03-26
         //采用栈来模拟保证位数对齐问题
-        Stack<Integer> temp1 = new Stack<Integer>();
-        Stack<Integer> temp2 = new Stack<Integer>();
-        Stack<Integer> resultStack = new Stack<Integer>();
+        Stack<Integer> temp1 = new Stack<>();
+        Stack<Integer> temp2 = new Stack<>();
+        Stack<Integer> resultStack = new Stack<>();
         int sum;
         int rem = 0;
         int temp;

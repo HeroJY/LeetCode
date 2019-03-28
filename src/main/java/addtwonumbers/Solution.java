@@ -1,4 +1,4 @@
-package main.java.AddTwoNumbers;
+package main.java.addtwonumbers;
 
 import main.java.ListNode;
 
@@ -21,26 +21,26 @@ import main.java.ListNode;
  **/
 public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        /**
+        /*
          * 进位数
          */
         int m = 0;
-        /**
+        /*
          * 初始化头节点
          */
         ListNode result = new ListNode(0);
-        /**
+        /*
          * 临时链表节点
          */
         ListNode tempList = result;
-        /**
+        /*
          * 临时节点1
          */
-        int temp1 = 0;
-        /**
+        int temp1;
+        /*
          * 临时节点2
          */
-        int temp2 = 0;
+        int temp2;
         //同步前移
         while(true){
             temp1 = l1.val + l2.val + m;

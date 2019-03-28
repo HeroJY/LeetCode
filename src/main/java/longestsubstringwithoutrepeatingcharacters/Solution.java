@@ -28,15 +28,15 @@ import java.util.Stack;
  **/
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
-        /**
-         * 利用栈来判断是否有重复（链表实现，不存在越界）
+        /*
+          利用栈来判断是否有重复（链表实现，不存在越界）
          */
-        Stack<Character> tempStack = new Stack<Character>();
-        /**
+        Stack<Character> tempStack = new Stack<>();
+        /*
          * 计算长度
          */
         int result = 0;
-        /**
+        /*
          * 临时变量
          */
         char temp1;
@@ -52,7 +52,7 @@ public class Solution {
                     result = tempStack.size();
                 }
             }else{
-                /**
+                /*
                  * 这里第一次考虑对栈全部清除，从第二个开始重新判断
                  * 主要耗时就在这里（219ms）
                  * i = i - tempStack.size();
