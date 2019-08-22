@@ -30,10 +30,10 @@ public class Solution {
      * 每次选择一个元素后问题规模都缩小，所以可以使用递归
      * 需要注意回溯的时候还原状态
      *
-     * @param nums
-     * @return
+     * @param nums 数组
+     * @return 结果
      */
-    public List<List<Integer>> permute(int[] nums) {
+    private List<List<Integer>> permute(int[] nums) {
         if (nums.length == 0) {
             return null;
         }
@@ -77,7 +77,9 @@ public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
         int[] nums = {1, 2, 3};
-        List<List<Integer>> result = solution.permute( nums );
+        List<List<Integer>> result;
+        result = solution.permute( nums );
+        assert result != null;
         for (List list : result) {
             System.out.println( list );
         }
